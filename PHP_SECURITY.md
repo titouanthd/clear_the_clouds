@@ -1,4 +1,4 @@
-Voici un exemple de résumé sous forme de liste en utilisant le format markdown, avec une pratique de sécurité PHP, une faille courante associée et sa correction :
+# Gardez votre code PHP à l'abri : 5 bonnes pratiques de sécurité à connaître
 
 1. **Utiliser des requêtes SQL paramétrées et des objets de données PHP (PDO).**
 
