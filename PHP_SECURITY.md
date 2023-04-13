@@ -5,16 +5,16 @@
 Faille courante : Injection SQL
 
 Exemple de faille :
-\```php
+```
 // Code non sécurisé
 $user = $_POST['user'];
 $password = $_POST['password'];
 
 $query = "SELECT * FROM users WHERE user = '$user' AND password = '$password'";
-\```
+```
 
 Correction :
-\```php
+```
 // Code sécurisé avec requêtes SQL paramétrées et PDO
 $user = $_POST['user'];
 $password = $_POST['password'];
@@ -24,26 +24,26 @@ $stmt = $pdo->prepare($query);
 $stmt->bindParam(':user', $user);
 $stmt->bindParam(':password', $password);
 $stmt->execute();
-\```
+```
 
 2. **Valider, filtrer et échapper correctement toutes les données utilisateur avant de les utiliser dans des requêtes SQL ou dans le code PHP.**
 
 Faille courante : Cross-Site Scripting (XSS)
 
 Exemple de faille :
-\```php
+```
 // Code non sécurisé
 $name = $_GET['name'];
 echo "Bienvenue, " . $name . "!";
-\```
+```
 
 Correction :
-\```php
+```
 // Code sécurisé avec validation, filtrage et échappement des données utilisateur
 $name = $_GET['name'];
 $name = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
 echo "Bienvenue, " . $name . "!";
-\```
+```
 
 3. **Mettre à jour régulièrement PHP ainsi que les frameworks, CMS et bibliothèques utilisés pour bénéficier des derniers correctifs de sécurité.**
 
