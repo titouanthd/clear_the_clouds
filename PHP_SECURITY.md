@@ -1,6 +1,6 @@
 # Gardez votre code PHP à l'abri : 5 bonnes pratiques de sécurité à connaître
 
-1. **Utiliser des requêtes SQL paramétrées et des objets de données PHP (PDO).**
+1. **Utiliser des requêtes SQL paramétrées** (ou préparées) avec PDO pour éviter les injections SQL.
 
 Faille courante : Injection SQL
 
@@ -62,3 +62,8 @@ Correction : Configurer le fichier php.ini pour désactiver les fonctions danger
 Faille courante : Transmission non sécurisée de données sensibles sur le réseau
 
 Correction : Utiliser HTTPS avec un certificat SSL valide pour chiffrer les communications entre le navigateur de l'utilisateur et le serveur, afin de protéger les données sensibles (comme les informations d'identification ou les données de paiement) transmises sur le réseau.
+
+sources:
+[Comment sécuriser le site PHP](https://www.getastra.com/blog/php-security/comment-securiser-le-site-php/)
+[PHP Manual - Sécurité - Injection SQL](https://www.php.net/manual/fr/security.database.sql-injection.php)
+[Sécurité PHP](https://blog.lesjeudis.com/securite-php)
