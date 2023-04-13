@@ -2,10 +2,10 @@
 
 ## Introduction
 Quelques informations concernant les failles de sécurité sur php.
-1. WordPress : plus de 35% des sites Web, 542 vulnérabilités en 2018.
-2. Techniques d'attaque : injection SQL et XSS.
+1. WordPress : plus de `35%` des sites Web, `542` vulnérabilités en 2018.
+2. Techniques d'attaque : `injection SQL` et `XSS`.
 3. Vol de données : environ 75 enregistrements par seconde.
-4. Attaques : toutes les 39 secondes, plus de 30 000 sites Web piratés par jour en 2019.
+4. Attaques : toutes les 39 secondes, plus de `30 000` sites Web piratés `par jour` en 2019.
 
 ## 1. Injection SQL
 
